@@ -1,0 +1,13 @@
+version: '3'
+services:
+  fastapi:
+    container_name: payhere_ass_back
+    build:
+      context: .
+      dockerfile: Dockerfile
+    volumes:
+      - .:/app
+    ports:
+      - '8000:8000'
+    environment:
+      - APP_ENV=dev
