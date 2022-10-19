@@ -31,3 +31,6 @@ APP_ENV=dev alembic downgrade head
    
 3) 도커
    1) docker-compose.yml 에서 DockerFile을 참고하여 이미지를 빌드하고 컨테이너에 이미지를 올린다.
+4) 테스트
+   1) cd payhere_ass_back
+   2) pytest
